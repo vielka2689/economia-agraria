@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Economía Agraria y Alimentación Sostenible</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    color-scheme: light;
+    --bg: #faf8f3;
+    --surface: #ffffff;
+    --text-primary: #211c14;
+    --text-secondary: #5c5346;
+    --muted: #8c8372;
+    --border: rgba(33,28,20,0.12);
+    --accent: #4b7a3d;
+    --accent-soft: #e7efe1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme: dark;
+      --bg: #17140f;
+      --surface: #211d17;
+      --text-primary: #f7f4ec;
+      --text-secondary: #c9c0ae;
+      --muted: #978d7a;
+      --border: rgba(247,244,236,0.12);
+      --accent: #8fbf7a;
+      --accent-soft: #2a3324;
+    }
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text-primary);
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.55;
+  }
+  h1,h2,h3{font-family:"Lora",Georgia,serif; letter-spacing:-0.01em;}
+  .wrap{max-width:860px; margin:0 auto; padding:0 20px 80px;}
+
+  header{padding:52px 0 28px; border-bottom:1px solid var(--border); margin-bottom:8px;}
+  .kicker{font-size:12.5px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin-bottom:10px;}
+  h1{font-size:clamp(26px,4vw,34px); font-weight:700; margin:0 0 12px; text-wrap:balance;}
+  .lede{color:var(--text-secondary); font-size:16px; max-width:620px; margin:0;}
+
+  nav{display:flex; flex-wrap:wrap; gap:6px 18px; margin-top:26px;}
+  nav a{color:var(--text-secondary); text-decoration:none; font-size:13.5px; font-weight:600; border-bottom:2px solid transparent; padding-bottom:4px;}
+  nav a:hover{color:var(--accent); border-color:var(--accent);}
+
+  section{padding:40px 0; border-bottom:1px solid var(--border); scroll-margin-top:20px;}
+  section:last-of-type{border-bottom:none;}
+  .sec-head{display:flex; align-items:baseline; gap:10px; margin-bottom:6px;}
+  .sec-icon{font-size:19px;}
+  h2{font-size:21px; font-weight:600; margin:0;}
+  .sec-desc{color:var(--text-secondary); font-size:14px; margin:0 0 22px; max-width:580px;}
+
+  .grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
+  @media (max-width:640px){ .grid{grid-template-columns:1fr;} }
+
+  .card{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:10px;
+    padding:16px 18px; transition:border-color .15s ease, transform .15s ease;
+  }
+  a.card:hover{border-color:var(--accent); transform:translateY(-1px);}
+  .card .tag{display:inline-block; font-size:11px; font-weight:700; letter-spacing:.03em; text-transform:uppercase; color:var(--accent); background:var(--accent-soft); padding:2px 8px; border-radius:20px; margin-bottom:8px;}
+  .card .ctitle{font-size:15px; font-weight:600; margin-bottom:4px; line-height:1.35;}
+  .card .cmeta{font-size:12.5px; color:var(--muted);}
+
+  .empty{
+    border:1px dashed var(--border); border-radius:10px; padding:22px 20px;
+    color:var(--muted); font-size:13.5px;
+  }
+  .empty strong{color:var(--text-secondary);}
+
+  footer{padding:36px 0 10px; font-size:12.5px; color:var(--muted);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Economía agraria</div>
+    <h1>Economía Agraria y Alimentación Sostenible</h1>
+    <p class="lede">Papers, datos, infografías y lecturas sobre economía agraria, sistemas alimentarios y sostenibilidad — reunidos en un solo sitio.</p>
+    <nav>
+      <a href="#papers">Papers</a>
+      <a href="#infografias">Infografías</a>
+      <a href="#datos">Datos</a>
+      <a href="#lecturas">Lecturas recomendadas</a>
+    </nav>
+  </header>
+
+  <section id="papers">
+    <div class="sec-head"><span class="sec-icon">📄</span><h2>Papers</h2></div>
+    <p class="sec-desc">Artículos académicos y de investigación, propios o de referencia.</p>
+    <div class="grid">
+      <div class="empty"><strong>Todavía no hay nada aquí.</strong><br>Pasa el primer paper (PDF o enlace) y se añade como tarjeta.</div>
+    </div>
+    <!--
+      Plantilla de tarjeta — copiar dentro de .grid y rellenar:
+      <a class="card" href="papers/nombre-del-archivo.pdf">
+        <span class="tag">Paper</span>
+        <div class="ctitle">Título del paper</div>
+        <div class="cmeta">Autor(es) · Año</div>
+      </a>
+    -->
+  </section>
+
+  <section id="infografias">
+    <div class="sec-head"><span class="sec-icon">📊</span><h2>Infografías</h2></div>
+    <p class="sec-desc">Resúmenes visuales de informes y datos del sector.</p>
+    <div class="grid">
+      <div class="empty"><strong>Todavía no hay nada aquí.</strong><br>Cuando quieras una infografía nueva, la construyo como página aparte y la enlazo aquí.</div>
+    </div>
+    <!--
+      Plantilla de tarjeta:
+      <a class="card" href="infografias/nombre-archivo.html">
+        <span class="tag">Infografía</span>
+        <div class="ctitle">Título de la infografía</div>
+        <div class="cmeta">Mes y año</div>
+      </a>
+    -->
+  </section>
+
+  <section id="datos">
+    <div class="sec-head"><span class="sec-icon">🧮</span><h2>Datos</h2></div>
+    <p class="sec-desc">Hojas de cálculo y bases de datos de utilidad para el sector.</p>
+    <div class="grid">
+      <div class="empty"><strong>Todavía no hay nada aquí.</strong><br>Sube el archivo (CSV, Excel) a una carpeta "datos" del repositorio y se enlaza aquí.</div>
+    </div>
+    <!--
+      Plantilla de tarjeta:
+      <a class="card" href="datos/nombre-archivo.xlsx">
+        <span class="tag">Datos</span>
+        <div class="ctitle">Nombre del dataset</div>
+        <div class="cmeta">Fuente · Año</div>
+      </a>
+    -->
+  </section>
+
+  <section id="lecturas">
+    <div class="sec-head"><span class="sec-icon">📚</span><h2>Lecturas recomendadas</h2></div>
+    <p class="sec-desc">Artículos de terceros que vale la pena leer.</p>
+    <div class="grid">
+      <div class="empty"><strong>Todavía no hay nada aquí.</strong><br>Pasa el enlace del artículo y el porqué te pareció interesante.</div>
+    </div>
+    <!--
+      Plantilla de tarjeta (enlace externo, abre en pestaña nueva):
+      <a class="card" href="https://..." target="_blank" rel="noopener">
+        <span class="tag">Lectura</span>
+        <div class="ctitle">Título del artículo</div>
+        <div class="cmeta">Medio · Año</div>
+      </a>
+    -->
+  </section>
+
+  <footer>Economía Agraria y Alimentación Sostenible · publicado con GitHub Pages.</footer>
+</div>
+</body>
+</html>
